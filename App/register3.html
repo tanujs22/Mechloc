@@ -1,0 +1,157 @@
+<!Doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<title>Register</title>
+
+        <link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		
+      
+		<script src="js/modernizr.custom.25376.js"></script>
+
+</head>
+<style>
+body { 
+      overflow-y:hidden;
+      /*background-color: blue;*/	
+
+	 }
+	 #top1{
+	 	margin-top: 10%;
+	 	margin-bottom: 15%;
+	 }
+.form-control { 
+	margin-bottom: 10px; }
+	#loginbox{
+	margin-top:10%;
+	margin-bottom: 25%;
+}
+@media screen and (max-width: 360px){
+#loginbox{
+	margin-top:45%; 
+	margin-bottom:80%;
+}
+}
+</style>
+<body>
+<div class="fluid-container">
+		<div id="perspective" class="perspective effect-airbnb">
+			<div class="container">
+			<!-- <img src="car1.png" id="top" /> -->
+				<div class="wrapper"><!-- wrapper  needed for scroll -->
+
+				
+					<div class="main clearfix">
+					    <nav class = "navbar navbar-inverse navbar-fixed-top" style="color:black;">
+						    
+						     
+						       <a href ="#" class="btn btn-info navbar-btn navbar-left " style="margin-left:10px;">Delhi-NCR&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a>
+						   
+
+							    <a href="" class="btn btn-info navbar-btn navbar-right"  style="margin-right:10px;"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+							
+								<a href="" class="btn btn-info navbar-btn navbar-right" id="showMenu" style="margin-right:10px;"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></a>
+								
+								
+								<!-- <img src="car.png" id="logo"  /> -->
+								<a href="#" class="btn btn-info navbar-btn navbar-left " style="margin-left:10px;">Mechloc</a>
+                                 
+							
+						    
+						</nav>
+						
+
+  
+    <div class="container">    
+        <div id="loginbox"  class="well well-sm col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">      
+            <center><legend><i class="glyphicon glyphicon-user"></i></a> Sign up!</legend></center>
+            <form action="#" method="post" class="form" role="form" id="register">
+            <div class="row">
+             
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                        required autofocus />
+                </div>
+                 
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" />
+                </div>
+            </div>
+            <input class="form-control" name="youremail" placeholder="Your Email" type="email" required/>
+            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" required/>
+            <input class="form-control" name="password" placeholder="New Password" type="password" required/>
+            <label for="">
+                Birth Date</label>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month" >Month</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Day" >Day</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Year" >Year</option>
+                    </select>
+                </div>
+            </div>
+            <label class="radio-inline" >
+                <input type="radio" name="Gender" id="inlineCheckbox1" value="male" required />
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="Gender" id="inlineCheckbox2" value="female" required/>
+                Female
+            </label>
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign up</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+
+  
+						
+					</div><!-- /main -->
+
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav left vertical">
+				<a href="#" class="icon-home">Home</a>
+				<a href="#" class="icon-news">Profile</a>
+				<a href="#" class="icon-image">FAQ</a>
+				<a href="#" class="icon-upload">Terms & Conditions</a>
+				<a href="#" class="icon-mail">Contact us</a>
+				<a href="#" class="icon-star">Rate the app</a>
+				<a href="#" class="icon-lock">Share the app</a>
+				<a href="#" class="icon-lock">Sign up</a>
+			</nav>
+		</div><!-- /perspective -->
+		
+	</div>
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+
+
+
+     <script src="js/validate.min.js"></script>
+     <script> $('#register').validator(); </script>
+        <script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+</body>
+</html>
