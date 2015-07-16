@@ -63,8 +63,10 @@
 						<!-- <div id="bg">
 						<img src="car1.png" />
 						</div> -->
-						<div class="container">  
-        <div id="loginbox"  class="mainbox col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">                    
+						<div class="container"> 
+
+        <div id="loginbox"  class="mainbox col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1"> 
+        <h2><div id="para" style="color:white"></div></h2>                  
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
@@ -108,25 +110,7 @@
                                       <script type="text/javascript"> 
 // $('#loginform').validator();
 
-function formsubmit(){
-	// console.log('Hello');
-	var signin=false;
-	var email=document.getElementById("loginform").elements.namedItem("inputEmail").value;
-    var password=document.getElementById("loginform").elements.namedItem("login-password").value;
-    // console.log(email);
-    // console.log(password);
-if(typeof(Storage) !== "undefined") {
-    // Code for localStorage/sessionStorage.
 
-      localStorage.setItem("email", email);
-      localStorage.setItem("password", password);
-      sigin=true;
-
-} else {
-    // Sorry! No Web Storage support..
-}
-
- }
 
 
 </script>
@@ -178,6 +162,7 @@ if(typeof(Storage) !== "undefined") {
 <script src="js/validate.min.js"></script>
 
 <script src="js/jquery-1.9.1.min.js"></script>
+<script src="flag.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>

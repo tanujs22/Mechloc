@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>Profile</title>
 		
-		<link rel="shortcut icon" href="../favicon.ico">
+		
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -14,12 +14,13 @@
 		
       
 		<script src="js/modernizr.custom.25376.js"></script>
+		<script src="flag.js"></script>
+		 <script>
+		
+		  console.log(userflag);
+		 </script>
 		<style>
 
-		
-        
-
-		
 		#top1{
 
          margin-top:45%; 
@@ -124,7 +125,7 @@
 				<a href="#" class="icon-mail">Contact us</a>
 				<a href="#" class="icon-star">Rate the app</a>
 				<a href="#" class="icon-lock">Share the app</a>
-				<a href="#" class="icon-lock">Sign up</a>
+				<a href="#" class="icon-lock" id="sign">Sign up</a>
 			</nav>
 		</div><!-- /perspective -->
 		
@@ -135,6 +136,19 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>
+		<script>
+		if(userflag){
+			document.getElementById("sign").innerHTML='Sign out';
+  
+}
+else{
+	 // console.log('hello profile!');
+  // document.getElementById("para").innerHTML='You have to login first!';
+  // console.log(document.location.pathname);
+   window.location="file:///C:/Users/kapu/Desktop/Practise1/Mechloc/App/signin.html";
+
+}
+</script>
 		
     </body>
 </html>
