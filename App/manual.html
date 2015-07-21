@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Mechloc</title>
+		<title>Manual</title>
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -14,10 +14,9 @@
       
 		<script src="js/modernizr.custom.25376.js"></script>
 		<style>
-		
 		#top1{
-         margin-top: 25%;
-         font-family: "Comic Sans MS", cursive, sans-serif;
+         margin-top: 20%;
+         font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
          font-size: 25px;
          font-weight:500;
          z-index: 5;
@@ -27,17 +26,14 @@
     }
      @media screen and (max-width: 360px){
      	#top1{
-         margin-top: 24%;
+         margin-top: 25%;
          font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-         font-size: 22px;
-         font-weight:550;
+         font-size: 15px;
+         font-weight:500;
          z-index: 5;
-         margin-bottom: 45%;
+         margin-bottom: 35%;
          color:white;
          
-    }
-    #b{
-    	font-size: 25px;
     }
 
      }
@@ -73,7 +69,6 @@
 								
 								<!-- <img src="car.png" id="logo"  /> -->
 								<a href="#" class="btn btn-info navbar-btn navbar-left " style="margin-left:10px;">Mechloc</a>
-								<!-- <div id="textfile-buttons"></div> -->
                                  
 							
 						    
@@ -85,21 +80,27 @@
 						</div>
 						<div class="col-md-8 col-sm-10 col-xs-12">
 						<center>
-						 <span id="b">Select your vehicle type<br/> <br>So that we can provide you with the information of the right mechanic!!</span><br/><br/>
-                            <form  method="post" class="form-horizontal" data-toggle="validator" action="geo.html">
+						 <h1>Your location cannot be tracked!<br/> <br>Please manually enter the details of your location!</h1><br/>
+                            <form  method="post" class="form-horizontal" data-toggle="validator">
 
 	                            <div class="form-group">
-				                    <label for="Vehicle">Vehicle type:</label>
-				                    <select name="Select" form="" style="color:black;">
-				                        <option value="Two">Two-Wheeler</option>
-				                        <option value="Three">Three-Wheeler</option>
-				                        <option value="Car">Car</option>
-				                        <option value="Others">Industrial Vehicle</option>
-				                        
-				                    </select>
+                                    <div class="col-md-4 col-sm-2">
+				                    <label for="pincode">Area pincode:</label>
+				                    </div>
+				                    <div class="col-md-8 col-sm-10">
+				                   <input type="text" class="form-control" id="pincode" name="pincode" placeholder="">
+				                   </div>
+	                            </div>
+	                            <div class="form-group">
+	                            <div class="col-md-4 col-sm-2">
+				                    <label for="area">Area name:</label>
+				                 </div>
+				                    <div class="col-md-8 col-sm-10">
+				                   <input type="text" class="form-control" id="area" name="area" placeholder="">
+				                   </div>
 	                            </div>
                                 
-                                <button type="submit" class="btn btn-primary  btn-lg" id="btnSubmit"><span class="glyphicon glyphicon-off"></span> Submit</button>
+                                <a href=""><button type="submit" class="btn btn-primary  btn-lg" id="btnSubmit" ><span class="glyphicon glyphicon-off"></span> Submit</button></a>
 
                             </form>
                             </center>
@@ -125,7 +126,6 @@
 				<a href="#" class="icon-star">Rate the app</a>
 				<a href="#" class="icon-lock">Share the app</a>
 				<a href="signin.html" class="icon-lock" id="sign" onclick="logout()">Sign in</a>
-
 			</nav>
 		</div><!-- /perspective -->
 		
@@ -140,9 +140,9 @@
 		<script>
 		if(userflag){
 			document.getElementById("sign").innerHTML='Sign out';
-			 // console.log(window.location.hostname);
-			  var createButton = $("<a href='geo.html' class='icon-lock'>Your location</a>");
+			 var createButton = $("<a href='geo.html' class='icon-lock'>Your location</a>");
           $(".outer-nav.left.vertical").append(createButton);
+			 // console.log(window.location.hostname);
   
 }
 else{
