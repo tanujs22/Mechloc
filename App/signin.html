@@ -77,7 +77,7 @@
 
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
                             
-                        <form  method="post" class="form-horizontal" data-toggle="validator" id="loginform">
+                        <form  method="post" class="form-horizontal" data-toggle="validator" id="loginform" action="index.html">
                            
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -145,13 +145,13 @@
 			</div><!-- /container -->
 			<nav class="outer-nav left vertical">
 				<a href="#" class="icon-home">Home</a>
-				<a href="#" class="icon-news">Profile</a>
-				<a href="#" class="icon-image">FAQ</a>
+				<a href="profile.html" class="icon-news">Profile</a>
+				<a href="faq.html" class="icon-image">FAQ</a>
 				<a href="#" class="icon-upload">Terms & Conditions</a>
-				<a href="#" class="icon-mail">Contact us</a>
+				<a href="contact.html" class="icon-mail">Contact us</a>
 				<a href="#" class="icon-star">Rate the app</a>
 				<a href="#" class="icon-lock">Share the app</a>
-				<a href="#" class="icon-lock">Sign up</a>
+				<a href="signin.html" class="icon-lock" id="sign" onclick="logout()">Sign in</a>
 			</nav>
 		</div><!-- /perspective -->
 		
@@ -163,6 +163,18 @@
 
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="flag.js"></script>
+<script>
+		if(userflag){
+			document.getElementById("sign").innerHTML='Sign out';
+			 var createButton = $("<a href='geo.html' class='icon-lock'>Your location</a>");
+          $(".outer-nav.left.vertical").append(createButton);
+  
+}
+else{
+	document.getElementById("sign").innerHTML='Sign in';
+  document.getElementById("para").innerHTML='You have to login first!';
+}
+</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/menu.js"></script>

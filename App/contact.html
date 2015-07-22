@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Mechloc</title>
+		<title>Contact us</title>
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		
       
@@ -16,39 +16,40 @@
 		<style>
 		
 		#top1{
-         margin-top: 25%;
-         font-family: "Comic Sans MS", cursive, sans-serif;
-         font-size: 25px;
+         margin-top: 9%;
+         font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+         font-size: 30px;
+         font-weight:500;
+         z-index: 5;
+         margin-bottom: 50%;
+         color:white;
+         
+    }
+     @media screen and (max-width: 360px){
+     	#top1{
+         margin-top: 30%;
+         font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+         font-size: 15px;
          font-weight:500;
          z-index: 5;
          margin-bottom: 35%;
          color:white;
          
     }
-     @media screen and (max-width: 360px){
-     	#top1{
-         margin-top: 24%;
-         font-family:"Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-         font-size: 22px;
-         font-weight:550;
-         z-index: 5;
-         margin-bottom: 45%;
-         color:white;
-         
-    }
-    #b{
-    	font-size: 25px;
-    }
 
      }
-    body{
-      overflow-y:hidden;
-     
-    }
-   
+    
+      body,html {
+        height:100%;
+        background-color: #CCDDFF;
+        overflow-y:hidden;
+      }
+      #map {width:100%;height:70%; margin-top:6%;}
     </style>
+    
+ 
 	</head>
-	<body id="bd">
+	<body id="bd" >
 
 					
 	<div class="fluid-container" >
@@ -80,34 +81,27 @@
 						</nav>
 						
 						<div id="top1">
-						<div class="row">
-						<div class="col-md-2 col-sm-1">
-						</div>
-						<div class="col-md-8 col-sm-10 col-xs-12">
-						<center>
-						 <span id="b">Select your vehicle type<br/> <br>So that we can provide you with the information of the right mechanic!!</span><br/><br/>
-                            <form  method="post" class="form-horizontal" data-toggle="validator" action="geo.html">
-
-	                            <div class="form-group">
-				                    <label for="Vehicle">Vehicle type:</label>
-				                    <select name="Select" form="" style="color:black;">
-				                        <option value="Two">Two-Wheeler</option>
-				                        <option value="Three">Three-Wheeler</option>
-				                        <option value="Car">Car</option>
-				                        <option value="Others">Industrial Vehicle</option>
-				                        
-				                    </select>
-	                            </div>
-                                
-                                <button type="submit" class="btn btn-primary  btn-lg" id="btnSubmit"><span class="glyphicon glyphicon-off"></span> Submit</button>
-
-                            </form>
-                            </center>
-                         </div>
-                         <div class="col-md-2 col-sm-1">
-                         </div>
-                    </div>
-                </div>
+							<div class="row">
+								<div class="page-header"><center>Contact Us</center></div>
+									
+									<div class="col-md-5 col-sm-5 col-xs-6">
+									<img src="img/contact.png" class="img-responsive" onmouseover="contact()" />
+									<span id="contact1"></span>
+									<script>
+									function contact(){
+										document.getElementById("contact1").innerHTML="Telephone no:XXXXXXXXX";
+									}
+									</script>
+									</div>
+									<div class="col-md-2 col-sm-2">
+									</div>
+									<div class="col-md-5 col-sm-5 col-xs-6">
+									<img src="img/email.png" class="img-responsive" style="width:90%;height:90%;" />
+									</div>
+									
+					     
+		                    </div>
+		                </div>
         
 
   
@@ -125,7 +119,6 @@
 				<a href="#" class="icon-star">Rate the app</a>
 				<a href="#" class="icon-lock">Share the app</a>
 				<a href="signin.html" class="icon-lock" id="sign" onclick="logout()">Sign in</a>
-
 			</nav>
 		</div><!-- /perspective -->
 		
@@ -141,14 +134,14 @@
 		if(userflag){
 			document.getElementById("sign").innerHTML='Sign out';
 			 // console.log(window.location.hostname);
-			  var createButton = $("<a href='geo.html' class='icon-lock'>Your location</a>");
+			  vavar createButton = $("<a href='geo.html' class='icon-lock'>Your location</a>");
           $(".outer-nav.left.vertical").append(createButton);
   
 }
 else{
 	 // console.log('hello profile!');
    console.log(document.location.pathname);
-   window.location="file:///C:/Users/kapu/Documents/GitHub/Mechloc/App/signin.html";
+   window.location="file:///C:/Users/kapu/Desktop/Practise1/Mechloc/App/signin.html";
 
 }
         </script>
