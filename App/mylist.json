@@ -1,0 +1,5 @@
+{ 
+  "u1":{ "user":"John", "number":2267, "location":"Noida" },
+  "u2":{ "user":"Will", "number":2734567, "location":"Janak Puri" },
+  "u3":{ "user":"Abiel","number":19456, "location":"Tilak nagar" }
+ }
