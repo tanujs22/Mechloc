@@ -86,7 +86,7 @@
 						<div class="col-md-8 col-sm-10 col-xs-12">
 						<center>
 						 <span id="b">Select your vehicle type<br/> <br>So that we can provide you with the information of the right mechanic!!</span><br/><br/>
-                            <form  method="post" class="form-horizontal" data-toggle="validator" action="geo.html">
+                            <form  method="post" class="form-horizontal" data-toggle="validator" action="mechanic.html">
 
 	                            <div class="form-group">
 				                    <label for="Vehicle">Vehicle type:</label>
@@ -146,9 +146,11 @@
   
 }
 else{
-	 // console.log('hello profile!');
-   console.log(document.location.pathname);
-   window.location="file:///C:/Users/kapu/Documents/GitHub/Mechloc/App/signin.html";
+	 console.log('hello profile!');
+   // console.log(document.location.pathname);
+   console.log(window.location.href);
+   window.location.href = "../App/signin.html";
+   // window.location="file:///C:/Users/kapu/Documents/GitHub/Mechloc/App/signin.html";
 
 }
         </script>
